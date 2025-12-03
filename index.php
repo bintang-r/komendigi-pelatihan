@@ -145,12 +145,17 @@
 		$hargaDasarNasi = 5000;
 		$tambahanSpeedFry = 3000;
 		$tambahanCabangCikarang = 1000;
+		$tambahanCabangBogor = 2000;
 
 		// Menetapkan harga dasar
 		if ($cabang == 'Cikarang') {
 			$hrgDada += $hargaDasarDada + $tambahanCabangCikarang;
 			$hrgPaha += $hargaDasarPaha + $tambahanCabangCikarang;
 			$hrgNasi += $hargaDasarNasi + $tambahanCabangCikarang;
+		} elseif ($cabang == "Bogor") {
+			$hrgDada += $hargaDasarDada + $tambahanCabangBogor;
+			$hrgPaha += $hargaDasarPaha + $tambahanCabangBogor;
+			$hrgNasi += $hargaDasarNasi + $tambahanCabangBogor;
 		} else {
 			$hrgDada += $hargaDasarDada;
 			$hrgPaha += $hargaDasarPaha;
@@ -245,7 +250,7 @@
 		<div class='row'>
 
 		<div class='col-lg-5'>Harga Satuan Dada Ayam:</div>
-			<div class='col-lg-5'>Rp " . formatRupiah($hargaDasarDada) . "</div>
+			<div class='col-lg-5'>Rp " . formatRupiah($hrgDada) . "</div>
 		</div>
 		<div class='row'>
 
@@ -261,7 +266,7 @@
 		<div class='row'>
 
 		<div class='col-lg-5'>Harga Satuan Paha Ayam:</div>
-			<div class='col-lg-5'>Rp " . formatRupiah($hargaDasarPaha) . "</div>
+			<div class='col-lg-5'>Rp " . formatRupiah($hrgPaha) . "</div>
 		</div>
 		<div class='row'>
 
@@ -277,7 +282,7 @@
 		<div class='row'>
 
 		<div class='col-lg-5'>Harga Satuan Nasi:</div>
-			<div class='col-lg-5'>Rp " . formatRupiah($hargaDasarNasi) . "</div>
+			<div class='col-lg-5'>Rp " . formatRupiah($hrgNasi) . "</div>
 		</div>
 		<div class='row'>
 
