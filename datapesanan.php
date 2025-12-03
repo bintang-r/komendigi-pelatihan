@@ -58,7 +58,7 @@
                 $grandTotal = 0;
 
                 foreach ($semuaPesanan as $pesanan) {
-                    $speedfryStatus = ($pesanan['speedfry'] == 1) ? 'Ya (+10%)' : 'Tidak (Reguler)';
+                    $speedfryStatus = ($pesanan['speedfry'] == 1) ? 'Ya' : 'Tidak/Reguler';
                     $classSpeedFry = ($pesanan['speedfry'] == 1) ? 'text-danger font-weight-bold' : '';
 
                     echo '<tr>';
