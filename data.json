@@ -460,5 +460,19 @@
         "totPaha": 8000,
         "totNasi": 5000,
         "totalHarga": 24000
+    },
+    {
+        "cabang": "",
+        "dada": "0",
+        "paha": "0",
+        "nasi": "0",
+        "speedfry": "0",
+        "hrgDada": 11000,
+        "hrgPaha": 8000,
+        "hrgNasi": 5000,
+        "totDada": 0,
+        "totPaha": 0,
+        "totNasi": 0,
+        "totalHarga": 0
     }
 ]
